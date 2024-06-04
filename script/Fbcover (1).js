@@ -5,7 +5,7 @@ version: "1.0.0",
 role: 0,
 credits: "MR CHAND",
 description: "Fbcover",
-hasPrefix: false,
+hasPrefix: true,
 usage : "fn cover",
 cooldowns: 0,
 dependencies: {
