@@ -4,7 +4,7 @@ module.exports.config = {
   role: 0,
   credits: "D-Jukie",
   description: "Count messages",
-  hasPrefix: false,
+  hasPrefix: true,
   usage: "[tag/reply/all/all number/all box]",
   cooldowns: 5,
 };
