@@ -6,7 +6,7 @@ module.exports.config = {
   version: "2.2",
   role: 0,
   credits: "Hazeyy",
-  hasPrefix: false,
+  hasPrefix: true,
   description: "( 𝚁𝚎𝚖𝚒𝚗𝚒 )",
   usage: "Image-Edit",
   cooldowns: 2,
