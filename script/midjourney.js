@@ -7,7 +7,7 @@ module.exports.config = {
   role: 0,
   credits: "Hazeyy",
   description: "( 𝙼𝚒𝚍𝚓𝚘𝚞𝚛𝚗𝚎𝚢 𝚟4 )",
-  hasPrefix: false,
+  hasPrefix: true,
   usage: "( 𝙼𝚘𝚍𝚎𝚕 - 𝙼𝚒𝚍𝚓𝚘𝚞𝚛𝚗𝚎𝚢 𝚟4 )",
   cooldowns: 3,
 };
