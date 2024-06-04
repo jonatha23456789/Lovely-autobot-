@@ -4,7 +4,7 @@ module.exports.config = {
   role: 0,
   credits: 'fixed by Jonell',
   description: 'Edit photo',
-  hasPrefix: false,
+  hasPrefix: true,
   usage: 'Reply images or URL images',
   cooldowns: 2,
   dependencies: {
