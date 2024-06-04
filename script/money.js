@@ -4,7 +4,7 @@ module.exports.config = {
 	role: 0,
 	credits: "Mirai Team",
 	description: "Check the amount of yourself or the person tagged",
-	hasPrefix: false,
+	hasPrefix: true,
 	usage: "[Tag]",
 	cooldowns: 5
 };
