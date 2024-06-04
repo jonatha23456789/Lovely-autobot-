@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: 'removebg',
+  name: 'rbg',
   version: '1.1.1',
   role: 0,
   credits: 'fixed by Jonell',
