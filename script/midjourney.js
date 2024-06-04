@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs");
 
 module.exports.config = {
-  name: "midjourney",
+  name: "lovely",
   version: "1.3",
   role: 0,
   credits: "Hazeyy",
@@ -22,11 +22,11 @@ module.exports.handleEvent = async function ({ api, event }) {
   api.setMessageReaction("📸", event.messageID, (err) => {}, true);
 
   if (!prompt) {
-    api.sendMessage("🤖 𝙷𝚎𝚕𝚕𝚘 𝚝𝚘 𝚞𝚜𝚎 𝙾𝚙𝚎𝚗𝚓𝚘𝚞𝚛𝚗𝚎𝚢\n\n𝙿𝚕𝚎𝚊𝚜𝚎 𝚞𝚜𝚎: 𝙼𝚒𝚓𝚘𝚞𝚛𝚗𝚎𝚢 [ 𝚙𝚛𝚘𝚖𝚙𝚝 ]", event.threadID, event.messageID);
+    api.sendMessage("🤖 𝙷𝚎𝚕𝚕𝚘 𝚝𝚘 𝚞𝚜𝚎 𝙾𝚙𝚎𝚗𝚓𝚘𝚞𝚛𝚗𝚎𝚢\n\n𝙿𝚕𝚎𝚊𝚜𝚎 𝚞𝚜𝚎: lovely [ 𝚙𝚛𝚘𝚖𝚙𝚝 ]", event.threadID, event.messageID);
     return;
   }
 
-  api.sendMessage("🕟 | 𝙼𝚒𝚍𝚓𝚘𝚞𝚛𝚗𝚎𝚢 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚒𝚗𝚐 𝙿𝚛𝚘𝚖𝚙𝚝, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝...", event.threadID, event.messageID);
+  api.sendMessage("🕟 | lovely 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚒𝚗𝚐 𝙿𝚛𝚘𝚖𝚙𝚝, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝...", event.threadID, event.messageID);
 
   try {
     const response = await axios.get('https://code-mage.replit.app/openjourney/v4', {
@@ -47,7 +47,7 @@ module.exports.handleEvent = async function ({ api, event }) {
       image.data.pipe(writeStream);
 
       writeStream.on('finish', () => {
-        const promptMessage = `🤖 𝐌𝐢𝐝𝐣𝐨𝐮𝐫𝐧𝐞𝐲 𝐯4 ( 𝐀𝐈 )\n\n🖋️ 𝙰𝚜𝚔: '${prompt}'\n\n✨ 𝙿𝚛𝚘𝚖𝚙𝚝 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚍:`;
+        const promptMessage = `🤖ᏞϴᏙᎬᏞᎽ  𝐯4 ( 𝐀𝐈 )\n\n🖋️ 𝙰𝚜𝚔: '${prompt}'\n\n✨ 𝙿𝚛𝚘𝚖𝚙𝚝 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚍:`;
 
         api.sendMessage({ body: promptMessage, attachment: fs.createReadStream(path) }, event.threadID, () => {
           fs.unlinkSync(path);
